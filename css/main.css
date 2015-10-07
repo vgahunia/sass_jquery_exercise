@@ -1,6 +1,7 @@
 body {
   background-color: white;
-  font-family: 'Quicksand', sans-serif; }
+  font-family: 'Quicksand', sans-serif;
+  text-align: center; }
 
 .container {
   border: 1px solid #dce1e1;
@@ -22,12 +23,14 @@ body {
   margin: 0 auto;
   border: 2px solid #f0f0f0;
   border-bottom: 4px solid #646464; }
-  .top h1 {
+  .top h2 {
     margin: 0;
     padding-top: 25px;
     text-align: center;
     font-size: 2.2em;
     color: #646464; }
+    .top h2 i {
+      color: white; }
 
 .down {
   width: 100%; }
@@ -58,6 +61,10 @@ body {
 
 #down {
   padding-bottom: 10px; }
+
+.head {
+  width: 960px;
+  margin: 0 auto; }
 
 .arrow {
   width: 70px;

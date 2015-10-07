@@ -21,6 +21,7 @@
 body {
 	background-color: $white;
 	font-family: 'Quicksand', sans-serif;
+	text-align: center;
 }
 
 //===============================
@@ -51,12 +52,15 @@ body {
 	border: 2px solid $lt-gray;
 	border-bottom: 4px solid $dark-gray;
 
-	h1 {
+	h2 {
 		margin: 0;
 		padding-top: 25px;
 		text-align: center;
 		font-size: $big;
 		color: $dark-gray;
+		i {
+			color: $white;
+		}
 	}
 }
 
@@ -86,6 +90,11 @@ body {
 
 #down {
 	padding-bottom: 10px;
+}
+
+.head {
+	width: 960px;
+	margin: 0 auto;
 }
 
 
