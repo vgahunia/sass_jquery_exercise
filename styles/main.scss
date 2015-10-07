@@ -1,0 +1,150 @@
+//====================================
+//  SASS Imports - Variables - Mixins
+//====================================
+
+@import 'color';
+@import 'size';
+
+@mixin black($o) {     
+	-webkit-background-color: rgba(0, 0, 0, $o);        
+	-moz-background-color: rgba(0, 0, 0, $o);         
+	-ms-background-color: rgba(0, 0, 0, $o);          
+	-o-background-color: rgba(0, 0, 0, $o);             
+	background-color: rgba(0, 0, 0, $o);
+}
+
+
+//===============================
+//       BODY and GENERAL
+//===============================
+
+body {
+	background-color: $white;
+	font-family: 'Quicksand', sans-serif;
+}
+
+//===============================
+//       CONTAINER
+//===============================
+
+
+.container {
+	border: 1px solid $gray;
+	width: 100%;
+	max-width: 960px;
+	margin: 20 auto;
+	text-align: center;
+	border-radius: $bord-rad;
+}
+
+.panel {
+	padding: 8px;
+}
+
+.top {
+	background-color: $green;
+	padding: 0;
+	margin: 0;
+	height: 100px;
+	width: 960px;
+	margin: 0 auto;
+	border: 2px solid $lt-gray;
+	border-bottom: 4px solid $dark-gray;
+
+	h1 {
+		margin: 0;
+		padding-top: 25px;
+		text-align: center;
+		font-size: $big;
+		color: $dark-gray;
+	}
+}
+
+.down {
+	width: 100%;
+}
+
+.box {
+	@include black(.7);
+	border: 2px solid $green;
+	margin: 10px;
+	border-radius: $bord-rad;
+
+	h2 {
+		color: $gray;
+		text-align: center;
+		font-size: $mid;
+	}
+}
+
+.box2 {
+	@include black(.7);
+	border: 6px solid $green;
+	margin: 10px;
+	border-radius: $bord-rad;
+}
+
+#down {
+	padding-bottom: 10px;
+}
+
+
+//===============================
+//         PICTURE BAYS
+//===============================
+
+.arrow {
+	width: 70px;
+	opacity: .5;
+}
+
+.one {
+	display: none;
+}
+
+.two {
+	display: none;
+}
+
+.three {
+	display: none;
+}
+
+.pix {
+	width: 98%;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background-color: $lt-gray;
+}
+
+.pic {
+	float: left;
+	width: 300px;
+	margin: 20px;
+	border: 1px solid $green;
+}
+
+.info {
+	float: left;
+	width: 500px;
+	padding: 40px;
+	font-size: 1.3em;
+	text-align: left;
+	color: $dark-gray;
+}
+
+.down {
+	clear: both;
+}
+
+.close {
+	clear: both;
+	-ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+   transform: rotate(180deg);
+}
+
+#product {
+	clear: both;
+}
